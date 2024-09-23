@@ -9,4 +9,6 @@ jobs:
         steps:
         - name: step1
           run: echo "${{ github.ref_name }}"
+        - name: kilo
+          run: echo poda panni
         
