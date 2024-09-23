@@ -1,6 +1,6 @@
 name: demo
 on:
-    pull_request_target: 
+    pull_request: 
         branches: 
         - 'main'
 jobs:
@@ -11,4 +11,5 @@ jobs:
           run: echo "${{ github.ref_name }}"
         - name: kilo
           run: echo poda panni
+
         
