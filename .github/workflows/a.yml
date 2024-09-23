@@ -1,6 +1,6 @@
 name: demo
 on:
-    pull_request_target: 
+    pull_request: 
         branches: 
         - 'main'
 jobs:
@@ -8,5 +8,5 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - name: step1
-          run: echo "${{ github.ref_name }}"
+          run: echo "${{ github.actor }}"
         
